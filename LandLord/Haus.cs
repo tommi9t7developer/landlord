@@ -15,6 +15,11 @@ namespace LandLord
 
         private string name;
 
-        public string Name { get => name; set => name = value; }
+        public string Name { get => name; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

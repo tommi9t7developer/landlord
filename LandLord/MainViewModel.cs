@@ -17,7 +17,10 @@ namespace LandLord
         public MainViewModel()
         {
             hauser = new ObservableCollection<string>();
+            echteHauser = new List<Haus>();
         }
+
+        List<Haus> echteHauser;
 
         [ObservableProperty]
         ObservableCollection<string> hauser;
@@ -29,6 +32,18 @@ namespace LandLord
         public void Save()
         {
             Hauser.Add(Haus);
+            Haus neuesHaus = new Haus(haus);
+            echteHauser.Add(neuesHaus);
+        }
+
+        [RelayCommand]
+        public void Selected()
+        {
+            //if (Haus != null)
+            {
+                var editWindow = new EditHaus();
+                editWindow.ShowDialog();
+            }
         }
     }
 }

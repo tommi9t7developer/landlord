@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\source\\repos\\LandLord\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\edithaus.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\edithaus.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,79 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\.gitignore",
-              "RelativeDocumentMoniker": "LandLord\\.gitignore",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\.gitignore",
-              "RelativeToolTip": "LandLord\\.gitignore",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAYwCUAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
-              "WhenOpened": "2024-07-20T15:27:34.018Z",
+              "DocumentIndex": 2,
+              "Title": "EditHaus.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml.cs",
+              "RelativeDocumentMoniker": "LandLord\\EditHaus.xaml.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml.cs",
+              "RelativeToolTip": "LandLord\\EditHaus.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T07:05:42.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "EditHaus.xaml",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml",
+              "RelativeDocumentMoniker": "LandLord\\EditHaus.xaml",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml",
+              "RelativeToolTip": "LandLord\\EditHaus.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T07:05:23.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Haus.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Haus.cs",
               "RelativeDocumentMoniker": "LandLord\\Haus.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Haus.cs",
               "RelativeToolTip": "LandLord\\Haus.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAjwAgAAAAVAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAjwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T14:41:05.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml",
               "RelativeDocumentMoniker": "LandLord\\App.xaml",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml",
               "RelativeToolTip": "LandLord\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-20T14:09:03.747Z"
+              "WhenOpened": "2024-07-20T14:09:03.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LandLord\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainViewModel.cs",
               "RelativeToolTip": "LandLord\\MainViewModel.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAuwB8AAAAJAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwC0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:47:03.384Z"
+              "WhenOpened": "2024-07-20T13:47:03.384Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml",
               "RelativeDocumentMoniker": "LandLord\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml",
               "RelativeToolTip": "LandLord\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-20T13:46:24.614Z"
+              "WhenOpened": "2024-07-20T13:46:24.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "LandLord\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml.cs",
               "RelativeToolTip": "LandLord\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAjwBQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:46:20.517Z"
+              "WhenOpened": "2024-07-20T13:46:20.517Z",
+              "EditorCaption": ""
             }
           ]
         }
