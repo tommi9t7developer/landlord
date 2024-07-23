@@ -44,9 +44,9 @@ namespace LandLord
         }
 
         [RelayCommand]
-        public void Selected()  // Methode des MainViewModel
+        public void Selected(string hausNameSelected)  // Methode des MainViewModel
         {
-            _communicationService.setHausName(hausname);
+            _communicationService.setHausName(hausNameSelected);
             var editHausWindow = _serviceProvider.GetRequiredService<EditHaus>();
             editHausWindow.Show();
         }

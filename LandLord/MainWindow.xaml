@@ -17,8 +17,8 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding}" Margin="10"/>
                         <Button Content="Edit"
-                                Command="{Binding DataContext.SelectedCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
-                              />
+                        Command="{Binding DataContext.SelectedCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                        CommandParameter="{Binding}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

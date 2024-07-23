@@ -20,7 +20,10 @@ namespace LandLord
             _hausService = hausService;
             _communicationService = communicationService;
             hausname = _communicationService.getHausName();
+            haus = _hausService.getHausByName(hausname);
         }
+
+        private Haus haus;
 
         [ObservableProperty]
         string hausname;

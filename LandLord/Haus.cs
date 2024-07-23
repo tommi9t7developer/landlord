@@ -11,9 +11,11 @@ namespace LandLord
         public Haus(String hausname)
         {
             name = hausname;
+            this.wohnungen = new List<IWohnung>();
         }
 
         private string name;
+        private List<IWohnung> wohnungen;
 
         public string Name { get => name; }
 

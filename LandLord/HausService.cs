@@ -27,8 +27,30 @@ namespace LandLord
             _echteHauser.Remove(haus);
         }
 
-       
-        // Weitere Methoden, um mit der Liste zu arbeiten
+        public Haus? getHausByName(string hausName) //gib Haus aus Liste zurück
+        {
+            if (_echteHauser != null)
+            {
+                return _echteHauser.FirstOrDefault(h => h.Name == hausName);
+            }
+            else return null;
+        }
+
+        public void updateHaus(Haus updatedHaus) //verändert Haus wieder zur Liste hinzufügen
+        {
+            var index = _echteHauser.FindIndex(h => h.Name == updatedHaus.Name);
+            if (index != -1)
+            {
+                _echteHauser[index] = updatedHaus;
+            }
+            else
+            {
+                // Optional: Falls das Haus nicht gefunden wird, können Sie es hinzufügen.
+                _echteHauser.Add(updatedHaus);
+            }
+        }
+
+
     }
 
 }
