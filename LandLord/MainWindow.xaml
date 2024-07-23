@@ -6,11 +6,9 @@
         xmlns:local="clr-namespace:LandLord" d:DataContext="{d:DesignInstance Type=local:MainViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.DataContext>
-        <local:MainViewModel />
-    </Window.DataContext>
+   
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="119,89,0,0" TextWrapping="Wrap" Text="{Binding Haus}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="119,89,0,0" TextWrapping="Wrap" Text="{Binding Hausname}" VerticalAlignment="Top" Width="120"/>
         <Label Content="Haus hinzufügen" HorizontalAlignment="Left" Margin="119,57,0,0" VerticalAlignment="Top"/>
         <Button Content="Speichern" HorizontalAlignment="Left" Margin="129,130,0,0" VerticalAlignment="Top" Command="{Binding SaveCommand}" />
         <ListBox ItemsSource="{Binding Hauser}" Margin="440,31,75,185">

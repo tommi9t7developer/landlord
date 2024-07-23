@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace LandLord
 {
     /// <summary>
@@ -19,9 +20,10 @@ namespace LandLord
     /// </summary>
     public partial class EditHaus : Window
     {
-        public EditHaus()
+        public EditHaus(EditHausViewModel editHausViewModel)
         {
-            InitializeComponent();
+            //InitializeComponent();
+            DataContext = editHausViewModel ?? throw new ArgumentNullException(nameof(editHausViewModel));
         }
     }
 }

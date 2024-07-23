@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,10 +15,16 @@ namespace LandLord
 {
     public partial class MainViewModel : ObservableObject
     {
-        public MainViewModel()
+        private readonly HausService _hausService;
+        private readonly CommunicationService _communicationService;
+        private readonly IServiceProvider _serviceProvider;
+        public MainViewModel(IServiceProvider serviceProvider, HausService hausService, CommunicationService communicationService)
         {
+            _serviceProvider = serviceProvider;
             hauser = new ObservableCollection<string>();
             echteHauser = new List<Haus>();
+            _hausService = hausService;
+            _communicationService = communicationService;
         }
 
         List<Haus> echteHauser;
@@ -26,24 +33,22 @@ namespace LandLord
         ObservableCollection<string> hauser;
 
         [ObservableProperty]
-        string haus;
+        string hausname;
 
         [RelayCommand]
         public void Save()
         {
-            Hauser.Add(Haus);
-            Haus neuesHaus = new Haus(haus);
-            echteHauser.Add(neuesHaus);
+            Haus neuesHaus = new Haus(hausname);
+            _hausService.AddHaus(neuesHaus);
+            Hauser.Add(hausname);
         }
 
         [RelayCommand]
-        public void Selected()
+        public void Selected()  // Methode des MainViewModel
         {
-            //if (Haus != null)
-            {
-                var editWindow = new EditHaus();
-                editWindow.ShowDialog();
-            }
+
+            var editHausWindow = _serviceProvider.GetRequiredService<EditHaus>();
+            editHausWindow.Show();
         }
     }
 }
