@@ -13,13 +13,20 @@ namespace LandLord
     public partial class EditHausViewModel : ObservableObject
     {
         private readonly HausService _hausService;
+        private readonly CommunicationService _communicationService;
 
-        public EditHausViewModel(HausService hausService)
+        public EditHausViewModel(HausService hausService, CommunicationService communicationService)
         {
             _hausService = hausService;
+            _communicationService = communicationService;
+            hausname = _communicationService.getHausName();
         }
 
-      
+        [ObservableProperty]
+        string hausname;
+
+
+
 
     }
 }

@@ -22,7 +22,7 @@ namespace LandLord
     {
         public EditHaus(EditHausViewModel editHausViewModel)
         {
-            //InitializeComponent();
+            InitializeComponent();
             DataContext = editHausViewModel ?? throw new ArgumentNullException(nameof(editHausViewModel));
         }
     }
