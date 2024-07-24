@@ -23,5 +23,10 @@ namespace LandLord
         {
             return Name;
         }
+
+        public void addWohnung(Wohnung wohnung)
+        {
+            this.wohnungen.Add(wohnung);    
+        }
     }
 }

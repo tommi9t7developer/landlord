@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LandLord
 {
-    interface IWohnung
+    public interface IWohnung
     {
-        string Name { get; }
+        string Geschoss { get; }
     }
 }

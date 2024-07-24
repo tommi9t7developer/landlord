@@ -3,14 +3,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LandLord"
+        xmlns:local="clr-namespace:LandLord" d:DataContext="{d:DesignInstance Type=local:EditHausViewModel}"
         mc:Ignorable="d"
         Title="EditHaus" Height="450" Width="800">
-    <Grid>
-        <Label Content="{Binding Hausname}" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
-        <Button Content="{Binding Hausname}" HorizontalAlignment="Left" Margin="209,349,0,0" VerticalAlignment="Top"/>
-
-
-
-    </Grid>
+    <TabControl>
+        <TabItem Header="Wohneinheit hinzufügen">
+            <Grid>
+                <Label Content="{Binding Hausname}" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+                <TextBox Text="{Binding Mietername}" HorizontalAlignment="Left" Margin="125,54,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                <TextBox Text="{Binding Geschoss}" HorizontalAlignment="Left" Margin="125,101,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                <ListBox ItemsSource="{Binding Wohnungen}" Margin="440,31,75,185"/>
+                <Button Content="Meiteinheit hinzufügen" HorizontalAlignment="Left" Margin="125,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.04,-2.222" Command="{Binding SaveCommand}"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Wohneinheit bearbeiten">
+            <Grid>
+                <ListBox ItemsSource="{Binding Wohnungen}" Margin="440,31,75,185">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding}" Margin="10"/>
+                                <Button Content="Auswählen"
+                 Command="{Binding DataContext.SelectedWohnungCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                 CommandParameter="{Binding}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </TabItem>
+    </TabControl>
 </Window>

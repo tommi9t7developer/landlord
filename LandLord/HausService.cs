@@ -27,6 +27,16 @@ namespace LandLord
             _echteHauser.Remove(haus);
         }
 
+        public void addWohnungZuHaus(string hausname, Wohnung wohnung) //
+        {
+            var haus = getHausByName(hausname);
+            if (haus != null)
+            {
+                haus.addWohnung(wohnung);
+            }
+
+        }
+
         public Haus? getHausByName(string hausName) //gib Haus aus Liste zurück
         {
             if (_echteHauser != null)

@@ -13,6 +13,7 @@ namespace LandLord
         public CommunicationService() { }
 
         private string hausName;
+        private string wohnungName;
 
         public void setHausName(string hausname)
         {
@@ -21,6 +22,15 @@ namespace LandLord
         public string getHausName()
         {
             return this.hausName;
+        }
+
+        public void setWohnungName(string wohnungname)
+        {
+            this.wohnungName = wohnungname;
+        }
+        public string getWohnungName()
+        {
+            return this.wohnungName;
         }
     }
 }

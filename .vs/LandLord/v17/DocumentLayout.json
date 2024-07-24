@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\source\\repos\\LandLord\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\wohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\wohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\imieter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\imieter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\iwohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\iwohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\edithausviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\wohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\wohnung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,121 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "HausService.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\HausService.cs",
+              "RelativeDocumentMoniker": "LandLord\\HausService.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\HausService.cs",
+              "RelativeToolTip": "LandLord\\HausService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:20:01.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Wohnung.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Wohnung.cs",
               "RelativeDocumentMoniker": "LandLord\\Wohnung.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Wohnung.cs",
               "RelativeToolTip": "LandLord\\Wohnung.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:29:15.785Z",
+              "WhenOpened": "2024-07-24T11:15:37.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IMieter.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\IMieter.cs",
-              "RelativeDocumentMoniker": "LandLord\\IMieter.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\IMieter.cs",
-              "RelativeToolTip": "LandLord\\IMieter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:28:40.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IWohnung.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\IWohnung.cs",
-              "RelativeDocumentMoniker": "LandLord\\IWohnung.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\IWohnung.cs",
-              "RelativeToolTip": "LandLord\\IWohnung.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:26:39.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Haus.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Haus.cs",
-              "RelativeDocumentMoniker": "LandLord\\Haus.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Haus.cs",
-              "RelativeToolTip": "LandLord\\Haus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:23:25.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "EditHausViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHausViewModel.cs",
               "RelativeDocumentMoniker": "LandLord\\EditHausViewModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHausViewModel.cs",
               "RelativeToolTip": "LandLord\\EditHausViewModel.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAA4AAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAA/wDgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T08:22:02.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HausService.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\HausService.cs",
-              "RelativeDocumentMoniker": "LandLord\\HausService.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\HausService.cs",
-              "RelativeToolTip": "LandLord\\HausService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:15:42.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LandLord\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainViewModel.cs",
               "RelativeToolTip": "LandLord\\MainViewModel.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAqwDAAAABAAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwCMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T07:53:43.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LandLord\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\MainWindow.xaml",
-              "RelativeToolTip": "LandLord\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-23T06:33:20.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "EditHaus.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml",
               "RelativeDocumentMoniker": "LandLord\\EditHaus.xaml",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\EditHaus.xaml",
               "RelativeToolTip": "LandLord\\EditHaus.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-23T05:35:37.542Z"
+              "WhenOpened": "2024-07-23T05:35:37.542Z",
+              "EditorCaption": ""
             }
           ]
         }
