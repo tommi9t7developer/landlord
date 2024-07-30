@@ -14,10 +14,10 @@ namespace LandLord
 {
     public partial class EditHausViewModel : ObservableObject
     {
-        private readonly HausService _hausService;
-        private readonly CommunicationService _communicationService;
+        private readonly IHausService _hausService;
+        private readonly ICommunicationService _communicationService;
 
-        public EditHausViewModel(HausService hausService, CommunicationService communicationService)
+        public EditHausViewModel(IHausService hausService, ICommunicationService communicationService)
         {
             _hausService = hausService;
             _communicationService = communicationService;

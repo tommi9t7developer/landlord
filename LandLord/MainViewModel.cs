@@ -15,16 +15,24 @@ namespace LandLord
 {
     public partial class MainViewModel : ObservableObject
     {
-        private readonly HausService _hausService;
-        private readonly CommunicationService _communicationService;
+        private readonly IHausService _hausService;
+        private readonly ICommunicationService _communicationService;
         private readonly IServiceProvider _serviceProvider;
-        public MainViewModel(IServiceProvider serviceProvider, HausService hausService, CommunicationService communicationService)
+        public MainViewModel(IServiceProvider serviceProvider, IHausService hausService, ICommunicationService communicationService)
         {
             _serviceProvider = serviceProvider;
-            hauser = new ObservableCollection<string>();
+            //hauser = new ObservableCollection<string>();
             echteHauser = new List<Haus>();
             _hausService = hausService;
             _communicationService = communicationService;
+
+            // Lade die gespeicherten Häuser und füge sie der ObservableCollection hinzu
+            var gespeicherteHaeuser = _hausService.GetHaeuser();
+            hauser = new ObservableCollection<string>();
+            foreach (var haus in gespeicherteHaeuser)
+            {
+                Hauser.Add(haus.Name);
+            }
         }
 
         List<Haus> echteHauser;

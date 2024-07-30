@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LandLord
 {
 
-    public class CommunicationService
+    public class CommunicationService : ICommunicationService
     {
 
         public CommunicationService() { }

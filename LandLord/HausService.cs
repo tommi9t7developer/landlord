@@ -1,30 +1,35 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace LandLord
 {
-    public class HausService
+    public class HausService : IHausService
     {
-        private List<Haus> _echteHauser;
+        private readonly string _filePath = "haeuser.json";
+        private List<Haus> _haeuser;
 
         public HausService()
         {
-            _echteHauser = new List<Haus>();
+            _haeuser = new List<Haus>();
+            _haeuser = LoadHaeuser();
         }
 
-        public IReadOnlyList<Haus> EchteHauser => _echteHauser.AsReadOnly();
+        public IReadOnlyList<Haus> EchteHauser => _haeuser.AsReadOnly();
 
         public void AddHaus(Haus haus)
         {
-            _echteHauser.Add(haus);
+            _haeuser.Add(haus);
+            SaveHaeuser();
         }
 
         public void RemoveHaus(Haus haus)
         {
-            _echteHauser.Remove(haus);
+            _haeuser.Remove(haus);
         }
 
         public void addWohnungZuHaus(string hausname, Wohnung wohnung) //
@@ -39,26 +44,35 @@ namespace LandLord
 
         public Haus? getHausByName(string hausName) //gib Haus aus Liste zurück
         {
-            if (_echteHauser != null)
+            if (_haeuser != null)
             {
-                return _echteHauser.FirstOrDefault(h => h.Name == hausName);
+                return _haeuser.FirstOrDefault(h => h.Name == hausName);
             }
             else return null;
         }
-
-        public void updateHaus(Haus updatedHaus) //verändert Haus wieder zur Liste hinzufügen
+        public List<Haus> GetHaeuser()
         {
-            var index = _echteHauser.FindIndex(h => h.Name == updatedHaus.Name);
-            if (index != -1)
-            {
-                _echteHauser[index] = updatedHaus;
-            }
-            else
-            {
-                // Optional: Falls das Haus nicht gefunden wird, können Sie es hinzufügen.
-                _echteHauser.Add(updatedHaus);
-            }
+            return _haeuser;
         }
+
+        private void SaveHaeuser()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            var json = JsonSerializer.Serialize(_haeuser, options);
+            File.WriteAllText(_filePath, json);
+        }
+
+        private List<Haus> LoadHaeuser()
+        {
+            if (File.Exists(_filePath))
+            {
+                var json = File.ReadAllText(_filePath);
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, IncludeFields = true };
+                return JsonSerializer.Deserialize<List<Haus>>(json, options) ?? new List<Haus>();
+            }
+            return new List<Haus>();
+        }
+
 
 
     }

@@ -18,7 +18,7 @@
         </TabItem>
         <TabItem Header="Wohneinheit bearbeiten">
             <Grid>
-                <ListBox ItemsSource="{Binding Wohnungen}" Margin="440,31,75,185">
+                <ListBox ItemsSource="{Binding Wohnungen}" Margin="71,73,444,143" RenderTransformOrigin="0.506,0.502">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
