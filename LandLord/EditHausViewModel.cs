@@ -26,7 +26,7 @@ namespace LandLord
             wohnungen = new ObservableCollection<string>();
         }
 
-        private Haus haus;
+        private IHaus haus;
 
         [ObservableProperty]
         ObservableCollection<string> wohnungen;

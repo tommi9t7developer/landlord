@@ -8,6 +8,13 @@ namespace LandLord
 {
     public interface IWohnung
     {
-        string Geschoss { get; }
+        public void setMieter(IMieter mieter);
+        public IMieter getMieter();
+
+        public void setGeschoss(string geschoss);
+
+        public string getGeschoss();
+
+
     }
 }

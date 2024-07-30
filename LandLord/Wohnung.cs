@@ -11,7 +11,7 @@ namespace LandLord
         public Wohnung() {
            
         }
-        public string Geschoss => throw new NotImplementedException();
+        //public string Geschoss => throw new NotImplementedException();
 
         private IMieter mieter;
 

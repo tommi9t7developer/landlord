@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LandLord
 {
-    public class Haus
+    public class Haus : IHaus
     {
         [JsonConstructor]
         public Haus(string name, List<IWohnung> wohnungen)
@@ -44,7 +44,7 @@ namespace LandLord
             return Name;
         }
 
-        public void addWohnung(Wohnung wohnung)
+        public void addWohnung(IWohnung wohnung)
         {
             this.wohnungen.Add(wohnung);    
         }

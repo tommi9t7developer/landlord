@@ -8,11 +8,10 @@ namespace LandLord
 {
     public interface IHausService
     {
-        IReadOnlyList<Haus> EchteHauser { get; }
-        void AddHaus(Haus haus);
-        void RemoveHaus(Haus haus);
+        void AddHaus(IHaus haus);
+        void RemoveHaus(IHaus haus);
         void addWohnungZuHaus(string hausname, Wohnung wohnung);
-        Haus? getHausByName(string hausName);
-        List<Haus> GetHaeuser();
+        IHaus? getHausByName(string hausName);
+        List<IHaus> GetHaeuser();
     }
 }
