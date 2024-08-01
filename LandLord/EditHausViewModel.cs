@@ -16,20 +16,36 @@ namespace LandLord
     {
         private readonly IHausService _hausService;
         private readonly ICommunicationService _communicationService;
+        private readonly IServiceProvider _serviceProvider;
 
-        public EditHausViewModel(IHausService hausService, ICommunicationService communicationService)
+        public EditHausViewModel(IServiceProvider serviceProvider, IHausService hausService, ICommunicationService communicationService)
         {
+            _serviceProvider = serviceProvider;
             _hausService = hausService;
             _communicationService = communicationService;
             hausname = _communicationService.getHausName();
             haus = _hausService.getHausByName(hausname);
-            wohnungen = new ObservableCollection<string>();
+
+
+
+            displaywohnungen = new ObservableCollection<string>();
+
+            // Lade die gespeicherten Häuser und füge sie der ObservableCollection hinzu
+            var gespeicherteWohnungen = _hausService.getWohnungenByHaus(hausname);
+            displaywohnungen = new ObservableCollection<string>();
+            MessageBox.Show(hausname);
+            foreach (var wohnung in gespeicherteWohnungen)
+            {
+                MessageBox.Show(wohnung.Geschoss);
+                Displaywohnungen.Add(wohnung.Geschoss);
+            }
+
         }
 
         private IHaus haus;
 
         [ObservableProperty]
-        ObservableCollection<string> wohnungen;
+        ObservableCollection<string> displaywohnungen;
 
         [ObservableProperty]
         string mietername = "Mietername";
@@ -43,14 +59,11 @@ namespace LandLord
         [RelayCommand]
         public void Save()
         {
-            Wohnung neueWohnung = new Wohnung();
-            //Mieter und geschoss dazu
-            Mieter neuerMieter = new Mieter(Mietername);
-            neueWohnung.setMieter(neuerMieter);
-            neueWohnung.setGeschoss(Geschoss);
-
+            Mieter neuerMieter = new Mieter();
+            neuerMieter.Name = mietername;
+            Wohnung neueWohnung = new Wohnung(neuerMieter, Geschoss);
             _hausService.addWohnungZuHaus(haus.Name, neueWohnung);
-            Wohnungen.Add(Geschoss);
+            Displaywohnungen.Add(Geschoss);
         }
        
         [RelayCommand]

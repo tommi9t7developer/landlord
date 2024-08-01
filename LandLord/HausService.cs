@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Text.Json.Serialization;
+using System.Diagnostics.Eventing.Reader;
 
 namespace LandLord
 {
@@ -30,19 +33,46 @@ namespace LandLord
             _haeuser.Remove(haus);
         }
 
-        public void addWohnungZuHaus(string hausname, Wohnung wohnung) //
+        public void addWohnungZuHaus(string hausname, IWohnung wohnung) //
         {
             var haus = getHausByName(hausname);
             if (haus != null)
             {
                 haus.addWohnung(wohnung);
+                SaveHaeuser();
             }
 
         }
 
-        public void getWohnungByNames(string hausname, string geschoss)
+        public List<IWohnung>? getWohnungenByHaus(string hausname)
         {
 
+            foreach (var hausvar in _haeuser)
+            {
+                if (hausvar.Name == hausname)
+                {
+                    return hausvar.getWohnungen();     
+                }
+            }
+
+            return null;
+            /*
+            var haus = getHausByName(hausname);
+            if (haus != null)
+            {
+                return haus.getWohnungen();
+            }
+            else return null; */
+        }
+
+        public IWohnung? getWohnungByNames(string hausname, string geschoss)
+        {
+            var haus = getHausByName(hausname);
+            if (haus != null)
+            {
+                return haus.getWohnungByGeschoss(geschoss);
+            }
+            else return null;
         }
 
         public IHaus? getHausByName(string hausName) //gib Haus aus Liste zurück
@@ -57,61 +87,38 @@ namespace LandLord
         {
             return _haeuser;
         }
-
-        private void SaveHaeuser()
+        public void SaveHaeuser()
         {
-            /*
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            var json = JsonSerializer.Serialize(_haeuser, options);
-            File.WriteAllText(_filePath, json);
-            */
-
-            // Sicherstellen, dass die Liste von Haus-Objekten korrekt konvertiert wird
             var hausList = _haeuser.OfType<Haus>().ToList();
 
-            // Optionen für die JSON-Serialisierung
             var options = new JsonSerializerOptions
             {
-                WriteIndented = true,  // Schöner formatierter JSON-Output
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase // Optional: camelCase-Namenskonvention
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                Converters = { new IWohnungConverter(), new IMieterConverter() }
             };
 
-            // Serialisieren der Liste von Haus-Objekten in eine JSON-Zeichenkette
             var json = JsonSerializer.Serialize(hausList, options);
-
-            // Schreiben der JSON-Zeichenkette in die Datei
             File.WriteAllText(_filePath, json);
         }
-        /*
-        private List<IHaus> LoadHaeuser()
-        {
-            if (File.Exists(_filePath))
-            {
-                var json = File.ReadAllText(_filePath);
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, IncludeFields = true };
-                return JsonSerializer.Deserialize<List<Haus>>(json, options) ?? new List<Haus>();
-            }
-            // Wenn du eine Liste von IHaus benötigst, konvertiere sie
-            return haeuser.Cast<IHaus>().ToList();
-        }
-        */
+
         public List<IHaus> LoadHaeuser()
         {
+            if (!File.Exists(_filePath))
+            {
+                return new List<IHaus>();
+            }
+
             var json = File.ReadAllText(_filePath);
             var options = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                // Weitere Optionen hinzufügen, falls nötig
+                Converters = { new IWohnungConverter(), new IMieterConverter() }
             };
 
-            // Deserialisiere JSON zu einer Liste von Haus-Objekten
             var haeuser = JsonSerializer.Deserialize<List<Haus>>(json, options) ?? new List<Haus>();
-
-            // Konvertiere die Liste von Haus zu IList<IHaus>
             return haeuser.Cast<IHaus>().ToList();
         }
-
-
 
     }
 

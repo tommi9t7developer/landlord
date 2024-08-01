@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LandLord
 {
+    /*
     public interface IWohnung
     {
         public void setMieter(IMieter mieter);
@@ -16,5 +17,11 @@ namespace LandLord
         public string getGeschoss();
 
 
+    } */
+
+    public interface IWohnung
+    {
+        IMieter Mieter { get; set; }
+        string Geschoss { get; set; }
     }
 }

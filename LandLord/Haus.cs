@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace LandLord
 {
@@ -37,8 +38,6 @@ namespace LandLord
         [JsonPropertyName("wohnungen")]
         public List<IWohnung> Wohnungen => wohnungen;
 
-        //public string Name { get => name; }
-
         public override string ToString()
         {
             return Name;
@@ -46,7 +45,31 @@ namespace LandLord
 
         public void addWohnung(IWohnung wohnung)
         {
-            this.wohnungen.Add(wohnung);    
+            if (wohnung != null)
+            {
+                this.wohnungen.Add(wohnung);
+            }
+            else MessageBox.Show("Wohnung NULL");
+        }
+
+        public IWohnung getWohnungByGeschoss(string geschoss)
+        {
+            // Durchlaufe die Liste der Wohnungen und suche nach der Wohnung mit dem angegebenen Geschoss
+            foreach (var wohnung in wohnungen)
+            {
+                if (wohnung.Geschoss == geschoss)
+                {
+                    return wohnung;
+                }
+            }
+
+            // Wenn keine passende Wohnung gefunden wurde, gib null zurück oder werfe eine Ausnahme
+            return null;
+        }
+
+        public List<IWohnung> getWohnungen()
+        {
+            return wohnungen;
         }
     }
 }

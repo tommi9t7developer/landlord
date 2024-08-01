@@ -12,6 +12,10 @@ namespace LandLord
         List<IWohnung> Wohnungen { get; }
         void addWohnung(IWohnung wohnung);
         string ToString();
+
+        public IWohnung getWohnungByGeschoss(string geschoss);
+
+        public List<IWohnung> getWohnungen();
     }
 }
 

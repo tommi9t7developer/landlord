@@ -22,7 +22,7 @@ namespace LandLord
         {
             _serviceProvider = serviceProvider;
             //hauser = new ObservableCollection<string>();
-            echteHauser = new List<Haus>();
+            //echteHauser = new List<Haus>();
             _hausService = hausService;
             _communicationService = communicationService;
 
@@ -35,7 +35,7 @@ namespace LandLord
             }
         }
 
-        List<Haus> echteHauser;
+        //List<Haus> echteHauser;
 
         [ObservableProperty]
         ObservableCollection<string> hauser;
