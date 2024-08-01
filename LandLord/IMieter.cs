@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 
 namespace LandLord
 {
-    /*
-    public interface IMieter
-    {
-        string Name { get; }
-    } */
-
     public interface IMieter
     {
         string Name { get; set; }
