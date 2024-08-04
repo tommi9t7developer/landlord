@@ -15,6 +15,8 @@ namespace LandLord
         public List<IWohnung>? getWohnungenByHaus(string hausname);
         public IWohnung? getWohnungByNames(string hausname, string geschoss);
         List<IHaus> GetHaeuser();
+        public List<string>? getPdfsfromWohnung(string hausname, string geschoss);
+        public void addPdfToWohnung(string hausname, string wohnung, string pdf);
 
         public void SaveHaeuser();
 

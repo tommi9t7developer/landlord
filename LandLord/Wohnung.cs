@@ -12,31 +12,25 @@ namespace LandLord
     public class Wohnung : IWohnung
     {
         public Wohnung() {
-            pdfFiles = new List<string>();
+            PdfFiles = new List<string>();
         }
 
         public Wohnung(IMieter mieter, string geschoss)
         {
             Mieter = mieter;
             Geschoss = geschoss;
-            pdfFiles = new List<string>();
+            PdfFiles = new List<string>();
         }
 
         // Liste von Dateipfaden für PDFs
-        public List<string> pdfFiles { get; set; }
+        public List<string> PdfFiles { get; set; }
+
+
 
         // Methode zum Hinzufügen einer PDF
-        public void addPdf()
+        public void addPdf(string pdf)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
-            openFileDialog.Title = "Select a PDF file";
-
-            if (openFileDialog.ShowDialog() == true)
-            {
-                pdfFiles.Add(openFileDialog.FileName);
-                MessageBox.Show("PDF added successfully: " + openFileDialog.FileName, "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
+            PdfFiles.Add(pdf);
         }
 
         public IMieter Mieter { get; set; }

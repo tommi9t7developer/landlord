@@ -18,7 +18,7 @@
         </TabItem>
         <TabItem Header="Wohneinheit bearbeiten">
             <Grid>
-                <ListBox ItemsSource="{Binding Displaywohnungen}" Margin="71,73,444,143" RenderTransformOrigin="0.506,0.502">
+                <ListBox ItemsSource="{Binding Displaywohnungen}" Margin="10,13,505,203" RenderTransformOrigin="0.506,0.502">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -33,6 +33,24 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+                <ListBox ItemsSource="{Binding Displaypdfs}" Margin="376,26,92,216">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding}" Margin="10"/>
+                                <Button Content="PDF anzeigen"
+       Command="{Binding DataContext.ShowPdfCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+       CommandParameter="{Binding}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+               
+            </Grid>
+        </TabItem>
+        <TabItem Header="PDf Anzeigen">
+            <Grid>
+                <WebBrowser Margin="10,10,10,10" local:WebBrowserUtility.BindableSource="{Binding PdfAdress}"/>
             </Grid>
         </TabItem>
     </TabControl>

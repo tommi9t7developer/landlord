@@ -10,6 +10,8 @@ namespace LandLord
     {
         IMieter Mieter { get; set; }
         string Geschoss { get; set; }
-        void addPdf();
+        public List<string> PdfFiles { get; set; }
+
+        public void addPdf(string pdf);
     }
 }

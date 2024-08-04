@@ -44,6 +44,19 @@ namespace LandLord
 
         }
 
+        public void addPdfToWohnung(string hausname, string wohnung, string pdf)
+        {
+            var wohnen = getWohnungByNames(hausname, wohnung);
+            if (wohnen != null)
+            {
+                wohnen.addPdf(pdf);
+                SaveHaeuser();
+            }
+            // Sicher?
+            else MessageBox.Show("Wohnung nicht gefunden");
+
+        }
+
         public List<IWohnung>? getWohnungenByHaus(string hausname)
         {
 
@@ -69,14 +82,16 @@ namespace LandLord
             }
 
             return null;
+        }
 
-            /*
-            var haus = getHausByName(hausname);
-            if (haus != null)
+        public List<string>? getPdfsfromWohnung(string hausname, string geschoss)
+        {
+            var wohnung = getWohnungByNames(hausname, geschoss);
+            if (wohnung != null)
             {
-                return haus.getWohnungByGeschoss(geschoss);
+                return wohnung.PdfFiles;
             }
-            else return null; */
+            else return null;
         }
 
         public IHaus? getHausByName(string hausName) //gib Haus aus Liste zurück

@@ -9,6 +9,8 @@ using CommunityToolkit.Mvvm.Input;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.ObjectModel;
+using Microsoft.Win32;
+using System.Diagnostics.Eventing.Reader;
 
 namespace LandLord
 {
@@ -27,7 +29,7 @@ namespace LandLord
             haus = _hausService.getHausByName(hausname);
 
 
-
+            displaypdfs = new ObservableCollection<string>();
             displaywohnungen = new ObservableCollection<string>();
 
             // Lade die gespeicherten Häuser und füge sie der ObservableCollection hinzu
@@ -36,7 +38,6 @@ namespace LandLord
             MessageBox.Show(hausname);
             foreach (var wohnung in gespeicherteWohnungen)
             {
-                MessageBox.Show(wohnung.Geschoss);
                 Displaywohnungen.Add(wohnung.Geschoss);
             }
 
@@ -46,6 +47,13 @@ namespace LandLord
 
         [ObservableProperty]
         ObservableCollection<string> displaywohnungen;
+
+        [ObservableProperty]
+        ObservableCollection<string> displaypdfs;
+
+        [ObservableProperty]
+        string pdfAdress;
+
 
         [ObservableProperty]
         string mietername = "Mietername";
@@ -65,19 +73,57 @@ namespace LandLord
             _hausService.addWohnungZuHaus(haus.Name, neueWohnung);
             Displaywohnungen.Add(Geschoss);
         }
-       
+
         [RelayCommand]
-        public void SelectedWohnung(string wohnungNameSelected)  
+        public void SelectedWohnung(string wohnungNameSelected)
         {
             var wohnung = _hausService.getWohnungByNames(Hausname, wohnungNameSelected);
             if (wohnung != null)
             {
-                wohnung.addPdf();
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                openFileDialog.Title = "Select a PDF file";
+
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    _hausService.addPdfToWohnung(Hausname, wohnungNameSelected, openFileDialog.FileName);
+                    MessageBox.Show("PDF added successfully: " + openFileDialog.FileName, "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
             }
             else MessageBox.Show("Wohnung nicht gefunden");
         }
-        
+
+        [RelayCommand]
+
+        public void ShowPdfs(string wohnungNameSelected)
+        {
+
+            var pdfs = _hausService.getPdfsfromWohnung(Hausname, wohnungNameSelected);
+
+            if (pdfs != null)
+            {
+                foreach (var pdf in pdfs)
+                {
+                    if (pdf != null)
+                        Displaypdfs.Add(pdf);
+                    else MessageBox.Show("PDF nicht gefunden");
+                }
 
 
+            }
+
+        }
+
+        [RelayCommand]
+
+        public void  ShowPdf(string pdfSelected)
+        {
+            PdfAdress = pdfSelected;
+        }
+
+       
+
+
+    
     }
 }
