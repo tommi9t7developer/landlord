@@ -34,7 +34,7 @@ namespace LandLord
         }
 
         public void addWohnungZuHaus(string hausname, IWohnung wohnung) //
-        {
+        { // aus _haueser ??
             var haus = getHausByName(hausname);
             if (haus != null)
             {
@@ -56,23 +56,27 @@ namespace LandLord
             }
 
             return null;
-            /*
-            var haus = getHausByName(hausname);
-            if (haus != null)
-            {
-                return haus.getWohnungen();
-            }
-            else return null; */
         }
 
         public IWohnung? getWohnungByNames(string hausname, string geschoss)
         {
+            foreach (var hausvar in _haeuser)
+            {
+                if (hausvar.Name == hausname)
+                {
+                    return hausvar.getWohnungByGeschoss(geschoss);
+                }
+            }
+
+            return null;
+
+            /*
             var haus = getHausByName(hausname);
             if (haus != null)
             {
                 return haus.getWohnungByGeschoss(geschoss);
             }
-            else return null;
+            else return null; */
         }
 
         public IHaus? getHausByName(string hausName) //gib Haus aus Liste zurück

@@ -69,7 +69,12 @@ namespace LandLord
         [RelayCommand]
         public void SelectedWohnung(string wohnungNameSelected)  
         {
-          
+            var wohnung = _hausService.getWohnungByNames(Hausname, wohnungNameSelected);
+            if (wohnung != null)
+            {
+                wohnung.addPdf();
+            }
+            else MessageBox.Show("Wohnung nicht gefunden");
         }
         
 

@@ -23,9 +23,12 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{Binding}" Margin="10"/>
-                                <Button Content="Auswählen"
+                                <Button Content="PDF hinzufügen"
                  Command="{Binding DataContext.SelectedWohnungCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
                  CommandParameter="{Binding}"/>
+                                <Button Content="PDFs anzeigen"
+                        Command="{Binding DataContext.ShowPdfsCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                        CommandParameter="{Binding}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
