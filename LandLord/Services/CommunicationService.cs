@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LandLord
+namespace LandLord.Services
 {
 
     public class CommunicationService : ICommunicationService
@@ -17,20 +17,20 @@ namespace LandLord
 
         public void setHausName(string hausname)
         {
-            this.hausName = hausname;
+            hausName = hausname;
         }
         public string getHausName()
         {
-            return this.hausName;
+            return hausName;
         }
 
         public void setWohnungName(string wohnungname)
         {
-            this.wohnungName = wohnungname;
+            wohnungName = wohnungname;
         }
         public string getWohnungName()
         {
-            return this.wohnungName;
+            return wohnungName;
         }
     }
 }

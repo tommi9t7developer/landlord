@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
 
-namespace LandLord
+namespace LandLord.View
 {
     public static class WebBrowserUtility
     {
@@ -29,7 +29,7 @@ namespace LandLord
             if (browser != null)
             {
                 string uri = e.NewValue as string;
-                browser.Source = !String.IsNullOrEmpty(uri) ? new Uri(uri) : null;
+                browser.Source = !string.IsNullOrEmpty(uri) ? new Uri(uri) : null;
             }
         }
 

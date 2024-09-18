@@ -7,11 +7,12 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LandLord
+namespace LandLord.ViewModels
 {
     public class Wohnung : IWohnung
     {
-        public Wohnung() {
+        public Wohnung()
+        {
             PdfFiles = new List<string>();
         }
 
@@ -24,7 +25,7 @@ namespace LandLord
 
         // Liste von Dateipfaden für PDFs
         public List<string> PdfFiles { get; set; }
-
+        public string pdfOrdnerName { get; }
 
 
         // Methode zum Hinzufügen einer PDF

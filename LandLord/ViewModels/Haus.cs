@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LandLord
+namespace LandLord.ViewModels
 {
     public class Haus : IHaus
     {
@@ -16,10 +16,11 @@ namespace LandLord
             this.name = name;
             this.wohnungen = wohnungen ?? new List<IWohnung>();
         }
-        public Haus(String hausname)
+        public Haus(string hausname)
         {
             name = hausname;
-            this.wohnungen = new List<IWohnung>();
+            wohnungen = new List<IWohnung>();
+
         }
 
         // Parameterloser Konstruktor für die Deserialisierung
@@ -31,6 +32,7 @@ namespace LandLord
 
         private string name;
         private List<IWohnung> wohnungen;
+        public string pdfOrdnerName { get; }
 
         [JsonPropertyName("name")]
         public string Name => name;
@@ -47,7 +49,7 @@ namespace LandLord
         {
             if (wohnung != null)
             {
-                this.wohnungen.Add(wohnung);
+                wohnungen.Add(wohnung);
             }
             else MessageBox.Show("Wohnung NULL");
         }

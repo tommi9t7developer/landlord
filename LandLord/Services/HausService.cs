@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Text.Json.Serialization;
 using System.Diagnostics.Eventing.Reader;
+using System.Diagnostics;
+using LandLord.ViewModels;
+using LandLord.Converter;
 
-namespace LandLord
+namespace LandLord.Services
 {
     public class HausService : IHausService
     {
@@ -46,14 +49,41 @@ namespace LandLord
 
         public void addPdfToWohnung(string hausname, string wohnung, string pdf)
         {
+            // Basisordner für PDFs
+            string baseFolder = Path.Combine("PDFs", hausname, wohnung);
+
+            // Überprüfen und Erstellen des Ordners, falls er nicht existiert
+            if (!Directory.Exists(baseFolder))
+            {
+                Directory.CreateDirectory(baseFolder);
+            }
+
+            // Dateiname und Zielpfad für die PDF-Datei
+            string fileName = Path.GetFileName(pdf);
+            string destinationPath = Path.Combine(baseFolder, fileName);
+
+            // Kopieren der PDF-Datei in den Zielordner
+            File.Copy(pdf, destinationPath, true);
+
+            string absolutePath = Path.GetFullPath(destinationPath);
+
+            //eventuell das drüber wieder löschen
             var wohnen = getWohnungByNames(hausname, wohnung);
             if (wohnen != null)
             {
-                wohnen.addPdf(pdf);
+                //wohnen.addPdf(pdf);
+                wohnen.addPdf(absolutePath); //warum fehlt hier  C:\Users\Thomas\source\repos\LandLord\LandLord\bin\Debug\net8.0-windows ??? PDFs\Schubert\ Dateiname
                 SaveHaeuser();
             }
             // Sicher?
             else MessageBox.Show("Wohnung nicht gefunden");
+
+
+
+
+
+
+
 
         }
 
@@ -64,7 +94,7 @@ namespace LandLord
             {
                 if (hausvar.Name == hausname)
                 {
-                    return hausvar.getWohnungen();     
+                    return hausvar.getWohnungen();
                 }
             }
 
@@ -138,7 +168,5 @@ namespace LandLord
             var haeuser = JsonSerializer.Deserialize<List<Haus>>(json, options) ?? new List<Haus>();
             return haeuser.Cast<IHaus>().ToList();
         }
-
     }
-
 }

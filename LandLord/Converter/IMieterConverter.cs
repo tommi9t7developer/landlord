@@ -6,8 +6,9 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
+using LandLord.ViewModels;
 
-namespace LandLord
+namespace LandLord.Converter
 {
     public class IMieterConverter : JsonConverter<IMieter>
     {

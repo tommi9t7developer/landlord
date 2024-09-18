@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Collections.ObjectModel;
 using Microsoft.Win32;
 using System.Diagnostics.Eventing.Reader;
+using LandLord.Services;
+using LandLord.ViewModels;
 
 namespace LandLord
 {

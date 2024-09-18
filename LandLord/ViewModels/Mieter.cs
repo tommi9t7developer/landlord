@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace LandLord
+namespace LandLord.ViewModels
 {
     public class Mieter : IMieter
     {

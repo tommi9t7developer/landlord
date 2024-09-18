@@ -7,13 +7,14 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Diagnostics.Metrics;
 using System.Windows;
+using LandLord.ViewModels;
 
-namespace LandLord
+namespace LandLord.Converter
 {
 
     public class IWohnungConverter : JsonConverter<IWohnung>
     {
-        
+
         public override IWohnung Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             // Deserialize as the concrete type
@@ -22,9 +23,9 @@ namespace LandLord
             {
                 MessageBox.Show("MieterConverter Wohnung ist null, Read");
             }
-            
+
             return wohnung;
-        } 
+        }
 
         public override void Write(Utf8JsonWriter writer, IWohnung value, JsonSerializerOptions options)
         {
