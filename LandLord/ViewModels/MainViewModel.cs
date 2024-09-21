@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using LandLord.Services;
 using LandLord.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,7 +21,9 @@ namespace LandLord
         private readonly IHausService _hausService;
         private readonly ICommunicationService _communicationService;
         private readonly IServiceProvider _serviceProvider;
-        public MainViewModel(IServiceProvider serviceProvider, IHausService hausService, ICommunicationService communicationService)
+        private readonly ILogger<MainViewModel> _logger;
+
+        public MainViewModel(IServiceProvider serviceProvider, IHausService hausService, ICommunicationService communicationService, ILogger<MainViewModel> logger)
         {
             _serviceProvider = serviceProvider;
             //hauser = new ObservableCollection<string>();
@@ -35,6 +38,11 @@ namespace LandLord
             {
                 Hauser.Add(haus.Name);
             }
+
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+
+            // Beispielhaftes Logging
+            _logger.LogInformation("MainViewModel wurde erstellt.");
         }
 
         //List<Haus> echteHauser;

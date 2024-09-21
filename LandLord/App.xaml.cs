@@ -4,6 +4,7 @@ using System.Windows;
 using LandLord.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace LandLord
 {
@@ -38,6 +39,14 @@ namespace LandLord
                     services.AddTransient<MainViewModel>(); // MainViewModel wird bei Bedarf erstellt
                     services.AddTransient<EditHaus> ();
                     services.AddTransient<EditHausViewModel>();
+
+                    // Logging hinzufügen
+                    services.AddLogging(configure =>
+                    {
+                        configure.AddConsole();  // Console-Logger hinzufügen
+                        configure.AddDebug();    // Debug-Logger hinzufügen
+                        configure.SetMinimumLevel(LogLevel.Information);  // Minimum Log-Level setzen
+                    });
                 });
     }
     }
