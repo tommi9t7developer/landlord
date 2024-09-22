@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\source\\repos\\LandLord\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\view\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\view\\edithaus.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\viewmodels\\edithausviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\viewmodels\\edithausviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\tests\\haustest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\models\\haus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\landlord.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\landlord.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\services\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\services\\hausservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|solutionrelative:landlord\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1F9F52-B527-4CD6-92DB-6DF99B5D61BA}|LandLord\\LandLord.csproj|c:\\users\\thomas\\source\\repos\\landlord\\landlord\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,12 +45,33 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditHausViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\ViewModels\\EditHausViewModel.cs",
+              "RelativeDocumentMoniker": "LandLord\\ViewModels\\EditHausViewModel.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\ViewModels\\EditHausViewModel.cs",
+              "RelativeToolTip": "LandLord\\ViewModels\\EditHausViewModel.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T06:04:56.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditHaus.xaml",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\View\\EditHaus.xaml",
+              "RelativeDocumentMoniker": "LandLord\\View\\EditHaus.xaml",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\View\\EditHaus.xaml",
+              "RelativeToolTip": "LandLord\\View\\EditHaus.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-22T05:46:32.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LandLord\\ViewModels\\MainViewModel.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "LandLord\\View\\MainWindow.xaml.cs",
@@ -75,12 +92,11 @@
               "RelativeToolTip": "LandLord\\View\\MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T12:33:06.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T12:33:06.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HausTest.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Tests\\HausTest.cs",
               "RelativeDocumentMoniker": "LandLord\\Tests\\HausTest.cs",
@@ -88,47 +104,11 @@
               "RelativeToolTip": "LandLord\\Tests\\HausTest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T12:14:41.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T12:14:41.396Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LandLord",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\LandLord.csproj",
-              "RelativeDocumentMoniker": "LandLord\\LandLord.csproj",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\LandLord.csproj",
-              "RelativeToolTip": "LandLord\\LandLord.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T11:02:37.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml",
-              "RelativeDocumentMoniker": "LandLord\\App.xaml",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml",
-              "RelativeToolTip": "LandLord\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-21T10:39:36.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml.cs",
-              "RelativeDocumentMoniker": "LandLord\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\App.xaml.cs",
-              "RelativeToolTip": "LandLord\\App.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T10:37:45.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Haus.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\Models\\Haus.cs",
               "RelativeDocumentMoniker": "LandLord\\Models\\Haus.cs",
@@ -140,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\LandLord\\LandLord\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "LandLord\\AssemblyInfo.cs",

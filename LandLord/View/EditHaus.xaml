@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:LandLord.View" xmlns:landlord="clr-namespace:LandLord" d:DataContext="{d:DesignInstance Type=landlord:EditHausViewModel}"
         mc:Ignorable="d"
         Title="EditHaus" Height="450" Width="800">
+    <Grid>
     <TabControl>
         <TabItem Header="Wohneinheit hinzufügen">
             <Grid>
@@ -45,7 +46,7 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-               
+
             </Grid>
         </TabItem>
         <TabItem Header="PDf Anzeigen">
@@ -54,4 +55,15 @@
             </Grid>
         </TabItem>
     </TabControl>
+
+        <StatusBar VerticalAlignment="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="Haus: "/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <!-- Hier wird der Hausname angezeigt -->
+                <TextBlock x:Name="Haus" Text="{Binding Hausname}" />
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
 </Window>
